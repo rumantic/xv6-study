@@ -31,6 +31,7 @@ main()
     userinit();      // first user process
     __sync_synchronize();
     started = 1;
+    // при запуске показываем количество свободной памяти
     printf("free memory: %d\n", freemem());
 
   } else {
